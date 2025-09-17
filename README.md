@@ -1,5 +1,7 @@
 ### Descripción
 
+- Crear una copia de los archivos .env.template y renombrarlos a .env
+
 - Para levantar la aplicacion solo parate en la raiz y ejecuta
 
 ```

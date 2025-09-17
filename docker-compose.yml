@@ -11,15 +11,15 @@ services:
       - strapi
 
   strapi:
-    build: ./strapi-app
+    build: ./iad-cms-strapi
     container_name: iad-strapi
     ports:
       - "1337:1337"
     env_file:
-      - ./strapi-app/.env
+      - ./iad-cms-strapi/.env
     # Monta el código local dentro del contenedor para ver cambios en tiempo real
     volumes:
-      - ./strapi-app:/opt/app
+      - ./iad-cms-strapi:/opt/app
     # Se asegura de que la base de datos esté iniciada antes que Strapi
     depends_on:
       - db

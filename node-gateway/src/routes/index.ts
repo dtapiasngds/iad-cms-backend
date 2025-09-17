@@ -7,7 +7,9 @@ const setupProxies = (app: Application) => {
   const strapiApiUrl = process.env.STRAPI_API_URL;
 
   if (!strapiApiUrl) {
-    throw new Error('FATAL ERROR: STRAPI_API_URL no está definida en el archivo .env.');
+    throw new Error(
+      'FATAL ERROR: STRAPI_API_URL no está definida en el archivo .env.',
+    );
   }
 
   const strapiProxy = createProxyMiddleware({
@@ -16,9 +18,9 @@ const setupProxies = (app: Application) => {
     pathRewrite: {
       '^/strapi': '',
     },
-    onError: (err, req, res) => {
-        console.error('Proxy Error:', err);
-    }
+    onError: (err: unknown, req: unknown, res: unknown) => {
+      console.error('Proxy Error:', err);
+    },
   });
 
   app.use('/strapi', strapiProxy);
