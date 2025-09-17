@@ -1,0 +1,38 @@
+# Archivos de sistema operativo
+.DS_Store
+Thumbs.db
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+
+# Directorios de dependencias
+node_modules/
+dist/
+build/
+.cache/
+
+# Strapi - Archivos de compilación y temporales
+.strapi/
+strapi-app/build
+strapi-app/.cache
+strapi-app/database/data.db
+
+# Archivos de variables de entorno (¡MUY IMPORTANTE!)
+.env
+.env.development
+.env.production
+.env.*.local
+strapi-app/.env
+node-gateway/.env
+
+# Archivos de Docker
+docker-compose.override.yml
+
+# Archivos de IDEs
+.vscode/
+.idea/

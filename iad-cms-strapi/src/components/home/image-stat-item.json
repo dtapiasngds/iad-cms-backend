@@ -1,0 +1,24 @@
+{
+  "collectionName": "components_home_image_stat_items",
+  "info": {
+    "displayName": "ImageStatItem"
+  },
+  "options": {},
+  "attributes": {
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files"
+      ]
+    },
+    "statistic": {
+      "type": "string"
+    },
+    "label": {
+      "type": "string"
+    }
+  },
+  "config": {}
+}

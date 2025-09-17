@@ -1,0 +1,41 @@
+services:
+  # Servicio del API Gateway
+  gateway:
+    build: ./node-gateway
+    container_name: iad-gateway
+    ports:
+      - "3000:3000"
+    env_file:
+      - ./node-gateway/.env
+    depends_on:
+      - strapi
+
+  strapi:
+    build: ./strapi-app
+    container_name: iad-strapi
+    ports:
+      - "1337:1337"
+    env_file:
+      - ./strapi-app/.env
+    # Monta el código local dentro del contenedor para ver cambios en tiempo real
+    volumes:
+      - ./strapi-app:/opt/app
+    # Se asegura de que la base de datos esté iniciada antes que Strapi
+    depends_on:
+      - db
+
+  db:
+    image: postgres:14-alpine
+    container_name: iad-db
+    environment:
+      POSTGRES_USER: ${DATABASE_USERNAME}
+      POSTGRES_PASSWORD: ${DATABASE_PASSWORD}
+      POSTGRES_DB: ${DATABASE_NAME}
+    volumes:
+      # Este volumen persistirá los datos de la base de datos
+      - strapi-data:/var/lib/postgresql/data
+    ports:
+      - "5432:5432"
+
+volumes:
+  strapi-data:

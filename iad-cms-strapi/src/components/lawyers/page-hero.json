@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_lawyers_page_heroes",
+  "info": {
+    "displayName": "PageHero"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "subtitle": {
+      "type": "string"
+    },
+    "video": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ]
+    }
+  },
+  "config": {}
+}

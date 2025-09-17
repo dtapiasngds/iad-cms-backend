@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_home_slides",
+  "info": {
+    "displayName": "Slides"
+  },
+  "options": {},
+  "attributes": {
+    "image": {
+      "type": "media",
+      "multiple": true,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ]
+    },
+    "altText": {
+      "type": "text"
+    }
+  },
+  "config": {}
+}

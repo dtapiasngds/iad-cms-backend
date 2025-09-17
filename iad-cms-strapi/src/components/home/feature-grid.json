@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_home_feature_grids",
+  "info": {
+    "displayName": "FeatureGrid"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "features": {
+      "type": "component",
+      "component": "home.feature-item",
+      "repeatable": true
+    }
+  },
+  "config": {}
+}

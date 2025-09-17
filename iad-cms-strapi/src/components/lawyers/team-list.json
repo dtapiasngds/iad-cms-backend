@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_lawyers_team_lists",
+  "info": {
+    "displayName": "TeamList"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "lawyers": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::lawyer.lawyer"
+    }
+  },
+  "config": {}
+}

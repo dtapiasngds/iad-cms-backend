@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_home_logo_banners",
+  "info": {
+    "displayName": "LogoBanner"
+  },
+  "options": {},
+  "attributes": {
+    "logos": {
+      "type": "component",
+      "component": "home.logo-item",
+      "repeatable": true
+    }
+  },
+  "config": {}
+}

@@ -1,0 +1,29 @@
+{
+  "kind": "singleType",
+  "collectionName": "lawyers_pages",
+  "info": {
+    "singularName": "lawyers-page",
+    "pluralName": "lawyers-pages",
+    "displayName": "LawyersPage"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
+  "attributes": {
+    "Seo": {
+      "type": "component",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "lawyers.seo",
+      "repeatable": false
+    }
+  }
+}

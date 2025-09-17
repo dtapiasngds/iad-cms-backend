@@ -1,0 +1,35 @@
+{
+  "collectionName": "components_home_services_highlights",
+  "info": {
+    "displayName": "ServicesHighlight"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "subtitle": {
+      "type": "string"
+    },
+    "services": {
+      "type": "component",
+      "component": "home.service-link",
+      "repeatable": true
+    },
+    "buttonText": {
+      "type": "string",
+      "required": true
+    },
+    "buttonLink": {
+      "type": "string",
+      "required": true
+    },
+    "imageStats": {
+      "type": "component",
+      "component": "home.image-stat-item",
+      "repeatable": true
+    }
+  },
+  "config": {}
+}

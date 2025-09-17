@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_home_info_cards",
+  "info": {
+    "displayName": "InfoCard"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "paragraph": {
+      "type": "richtext"
+    },
+    "buttonText": {
+      "type": "string"
+    },
+    "buttonLink": {
+      "type": "string"
+    }
+  },
+  "config": {}
+}

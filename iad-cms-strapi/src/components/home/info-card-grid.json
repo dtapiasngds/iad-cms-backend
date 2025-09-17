@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_home_info_card_grids",
+  "info": {
+    "displayName": "InfoCardGrid"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "subtitle": {
+      "type": "string"
+    },
+    "cards": {
+      "type": "component",
+      "component": "home.info-card",
+      "repeatable": true
+    }
+  },
+  "config": {}
+}
