@@ -1,5 +1,9 @@
 FROM node:20-alpine
 
+# NUEVA LÍNEA: Instala las dependencias de sistema para sharp
+# Se hace esto porque dependiendo del sistema operativo base, las dependencias pueden variar
+RUN apk add --no-cache build-base gcc autoconf automake zlib-dev libpng-dev nasm vips-dev
+
 # Establece el directorio de trabajo
 WORKDIR /opt/app
 
